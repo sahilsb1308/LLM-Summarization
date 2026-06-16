@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/reports/*.json
+data/reports/*.md
+data/reports/archive/
+.streamlit/
+.claude/
