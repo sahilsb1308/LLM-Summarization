@@ -4,12 +4,12 @@ An AI-powered YouTube performance analytics platform for MoveUp Media. Automatic
 
 ## Features
 
-- **Automated data collection** — fetches last 10 videos from Netflu and ThePlayoffsTV via YouTube Data API v3
-- **AI-generated reports** — Claude analyzes the data and produces structured performance reports with per-video ratings, top/bottom performers, and actionable recommendations
-- **Management dashboard** — Streamlit UI with KPI cards, color-coded video tables, and competitive benchmarks
-- **Conversational agent** — autonomous Claude agent with tool use for natural language queries ("Which video dropped the most?", "Compare us to BeFootball")
-- **Competitive benchmark** — includes BeFootball and Oh My Goal as competitor channels in the same sports/entertainment content sector
-- **Weekly auto-refresh** — APScheduler regenerates the report every Monday at 08:00 UTC automatically
+- **Automated data collection** - fetches last 10 videos from Netflu and ThePlayoffsTV via YouTube Data API v3
+- **AI-generated reports** - Claude analyzes the data and produces structured performance reports with per-video ratings, top/bottom performers, and actionable recommendations
+- **Management dashboard** - Streamlit UI with KPI cards, color-coded video tables, and competitive benchmarks
+- **Conversational agent** - autonomous Claude agent with tool use for natural language queries ("Which video dropped the most?", "Compare us to BeFootball")
+- **Competitive benchmark** - includes BeFootball and Oh My Goal as competitor channels in the same sports/entertainment content sector
+- **Weekly auto-refresh** - APScheduler regenerates the report every Monday at 08:00 UTC automatically
 
 ## Tech Stack
 
