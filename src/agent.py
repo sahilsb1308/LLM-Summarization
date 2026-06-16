@@ -1,5 +1,3 @@
-"""Conversational agent with tool use for dynamic YouTube data queries (OpenAI)."""
-
 import os
 import json
 from openai import OpenAI
@@ -126,7 +124,6 @@ def execute_tool(tool_name: str, tool_input: dict) -> str:
 
 
 def run_agent(user_message: str, conversation_history: list, cached_data: dict | None = None) -> tuple[str, list]:
-    """Run one conversational turn. Returns (response_text, updated_history)."""
     history = conversation_history + [{"role": "user", "content": user_message}]
 
     while True:

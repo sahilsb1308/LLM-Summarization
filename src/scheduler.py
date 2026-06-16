@@ -1,5 +1,3 @@
-"""Weekly auto-scheduler: regenerates report every Monday at 08:00 UTC."""
-
 import os
 import json
 import logging
@@ -13,7 +11,6 @@ _scheduler: BackgroundScheduler | None = None
 
 
 def run_weekly_refresh(include_competitive: bool = True):
-    """Fetch fresh data and regenerate the report. Called by the scheduler."""
     from src.youtube import collect_all_data, save_data, MOVEUP_CHANNELS, COMPETITOR_CHANNELS
     from src.analyzer import generate_report, save_report
 
@@ -41,7 +38,6 @@ def run_weekly_refresh(include_competitive: bool = True):
 
 
 def start_scheduler(include_competitive: bool = True):
-    """Start the background scheduler (Monday 08:00 UTC)."""
     global _scheduler
     if _scheduler and _scheduler.running:
         return _scheduler

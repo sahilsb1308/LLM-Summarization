@@ -1,5 +1,3 @@
-"""LLM-powered report generator using OpenAI GPT-4o."""
-
 import os
 from openai import OpenAI
 from pathlib import Path

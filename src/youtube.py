@@ -1,5 +1,3 @@
-"""YouTube Data API v3 fetcher for MoveUp Content Ops Bot."""
-
 import os
 import json
 from datetime import datetime, timezone
@@ -28,7 +26,6 @@ def get_youtube_client():
 
 
 def resolve_channel_id(youtube, handle: str) -> str:
-    """Resolve @handle to channel ID."""
     username = handle.lstrip("@")
     resp = youtube.channels().list(
         part="id,snippet",
@@ -41,7 +38,6 @@ def resolve_channel_id(youtube, handle: str) -> str:
 
 
 def fetch_last_n_videos(youtube, channel_id: str, n: int = 10) -> list[dict]:
-    """Fetch the last n video IDs from a channel via the search endpoint."""
     search_resp = youtube.search().list(
         part="id",
         channelId=channel_id,
@@ -88,7 +84,6 @@ def fetch_last_n_videos(youtube, channel_id: str, n: int = 10) -> list[dict]:
 
 
 def fetch_channel_stats(youtube, channel_id: str) -> dict:
-    """Fetch overall channel statistics."""
     resp = youtube.channels().list(
         part="statistics,snippet",
         id=channel_id,
@@ -108,7 +103,6 @@ def fetch_channel_stats(youtube, channel_id: str) -> dict:
 
 
 def collect_all_data(channels: dict | None = None, n: int = 10) -> dict:
-    """Collect data for all channels. Returns dict keyed by channel name."""
     if channels is None:
         channels = MOVEUP_CHANNELS
 
