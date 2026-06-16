@@ -52,11 +52,11 @@ Open http://localhost:8501
 
 ## Usage
 
-1. **Settings** → "Collect Fresh Data" — fetches YouTube metrics for all channels
-2. **Settings** → "Generate AI Report" — runs Claude analysis on collected data
-3. **Performance Report** — view the full AI-generated report
-4. **Dashboard** — visual KPIs and color-coded video tables
-5. **Conversational Agent** — ask natural language questions; agent calls YouTube API live
+1. **Settings** → "Collect Fresh Data" - fetches YouTube metrics for all channels
+2. **Settings** → "Generate AI Report" - runs Claude analysis on collected data
+3. **Performance Report** - view the full AI-generated report
+4. **Dashboard** - visual KPIs and color-coded video tables
+5. **Conversational Agent** - ask natural language questions; agent calls YouTube API live
 
 ## Competitive Channels Rationale
 
